@@ -24,4 +24,4 @@ jobs:
         run: yarn && yarn build && yarn deploy
 
       - name: Invalidate outdated content
-        run: aws cloudfront create-invalidation --distribution-id E2S0S727163EAW --paths "/**/*"
+        run: aws cloudfront create-invalidation --distribution-id E2S0S727163EAW --paths "/index.html"
